@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: #00ff00; /* لون النص الأخضر مثل الماتريكس */
+    font-family: 'Courier New', Courier, monospace; /* خط يشبه خطوط البرمجة */
+    overflow: hidden; /* منع التمرير */
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc00;
+}

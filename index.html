@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 7 Emulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">Windows 7 Emulator</div>
+            <nav>
+                <ul>
+                    <li><a href="#start-menu">Start Menu</a></li>
+                    <li><a href="#taskbar">Taskbar</a></li>
+                    <li><a href="#desktop">Desktop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="emulator">
+        <main>
+            <section id="start-menu">
+                <h2>Start Menu</h2>
+                <button onclick="openStartMenu()">Open Start Menu</button>
+                <div id="start-menu-content" style="display:none;">
+                    <ul>
+                        <li><button onclick="openProgrammingLanguages()">Programming Languages</button></li>
+                        <li>Documents</li>
+                        <li>Settings</li>
+                        <li>Shut Down</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="taskbar">
+                <h2>Taskbar</h2>
+                <div id="taskbar-content">
+                    <button onclick="openApplication('notepad')">Notepad</button>
+                    <button onclick="openApplication('calculator')">Calculator</button>
+                </div>
+            </section>
+            <section id="desktop">
+                <h2>Desktop</h2>
+                <div id="desktop-icons">
+                    <div class="icon" onclick="openApplication('myComputer')">My Computer</div>
+                    <div class="icon" onclick="openApplication('recycleBin')">Recycle Bin</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

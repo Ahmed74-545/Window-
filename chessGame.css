@@ -1,0 +1,48 @@
+body {
+    background-color: black; /* لون الخلفية */
+    color: #00ff00; /* لون النص */
+    font-family: 'Courier New', Courier, monospace; /* خط يشبه خطوط البرمجة */
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* مركز النص */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 أعمدة للوحة الشطرنج */
+    margin: 20px auto; /* مركز اللوحة */
+    width: 400px; /* عرض اللوحة */
+}
+
+.square {
+    width: 50px; /* عرض المربع */
+    height: 50px; /* ارتفاع المربع */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; /* حجم النص للقطع */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+}
+
+.white {
+    background-color: white; /* لون المربعات البيضاء */
+}
+
+.black {
+    background-color: #555; /* لون المربعات السوداء */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
